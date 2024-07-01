@@ -32,7 +32,7 @@ export default function CategorySearch(): JSX.Element {
     }
 
     fetch(url, options)
-      .then(async (response) => await response.json())
+      .then((response) => response.json())
       .then((response) => {
         setGenres(response.genres)
       })

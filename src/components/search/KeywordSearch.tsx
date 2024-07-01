@@ -24,7 +24,7 @@ export default function KeywordSearch(): JSX.Element {
     }
 
     fetch(url, options)
-      .then(async (response) => await response.json())
+      .then( (response) => response.json())
       .then((response) => {
         setMovieSearchResult(response.results)
       })

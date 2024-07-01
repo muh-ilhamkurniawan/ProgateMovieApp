@@ -28,7 +28,7 @@ export default function CategoryResults({route}): JSX.Element {
     }
 
     fetch(url, options)
-      .then(async (response) => await response.json())
+      .then( (response) =>  response.json())
       .then((response) => {
         setMovieByGenreList(response.results)
       })
